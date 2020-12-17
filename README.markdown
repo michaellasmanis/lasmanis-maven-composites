@@ -8,8 +8,7 @@ This project sets up groups of maven dependencies for Java projects.
     * junit:junit
     * org.assertj:assertj-core
     * org.mockito:mockito-core
-* lambda-jersey
-    * 
+
 ## Usage
 
 Below is the basic usage pattern for inclusion in a pom:
