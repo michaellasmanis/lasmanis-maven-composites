@@ -22,12 +22,12 @@
     <groupId>com.lasmanis.maven.composites</groupId>
     <artifactId>composites-parent</artifactId>
     <version>${revision}.${changelist}</version>
+
     <packaging>pom</packaging>
 
     <name>Maven Composites - Parent POM</name>
+    <description>Set of Maven Composites to manage dependencies for Java builds</description>
     <inceptionYear>2020</inceptionYear>
-
-    <url>${baseurl}/${project.artifactId}</url>
 
     <properties>
         <revision>0.0</revision>
@@ -45,6 +45,8 @@
         <mockito.version>3.6.28</mockito.version>
 
     </properties>
+
+    <url>${baseurl}/${project.artifactId}</url>
 
     <build>
         <pluginManagement>
