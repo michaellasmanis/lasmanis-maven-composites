@@ -20,6 +20,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>unit-test</artifactId>
+
     <packaging>jar</packaging>
 
     <parent>
@@ -30,8 +31,16 @@
     </parent>
 
     <name>Maven Composites - Unit Testing</name>
+    <description>Set of Maven dependencies for standardized unit testing support</description>
 
     <url>${baseurl}/${project.artifactId}</url>
+
+    <distributionManagement>
+        <site>
+            <id>scm-publish</id>
+            <url>${scmBase.connection}/${project.artifactId}</url>
+        </site>
+    </distributionManagement>
 
     <dependencies>
         <dependency>

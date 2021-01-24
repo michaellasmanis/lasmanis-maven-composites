@@ -20,6 +20,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>composites-reactor</artifactId>
+
     <packaging>pom</packaging>
 
     <parent>
@@ -34,17 +35,19 @@
 
     <url>${baseurl}</url>
 
-    <modules>
-        <module>composites-parent</module>
-        <module>unit-test</module>
-    </modules>
-
     <scm>
-        <connection>${scmconnection}</connection>
-        <url>${scmurl}</url>
-        <developerConnection>${scmdeveloperConnection}</developerConnection>
-        <tag>${scmtag}</tag>
+        <connection>${scmBase.connection}</connection>
+        <url>${scmBase.url}</url>
+        <developerConnection>${scmBase.developerConnection}</developerConnection>
+        <tag>${scmBase.tag}</tag>
     </scm>
+
+    <distributionManagement>
+        <site>
+            <id>scm-publish</id>
+            <url>${scmBase.connection}</url>
+        </site>
+    </distributionManagement>
 
     <build>
         <plugins>
@@ -55,4 +58,8 @@
         </plugins>
     </build>
 
+    <modules>
+        <module>composites-parent</module>
+        <module>unit-test</module>
+    </modules>
 </project>
