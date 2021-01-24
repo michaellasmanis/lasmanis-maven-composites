@@ -37,7 +37,7 @@
 
         <!-- plugins/extensions -->
         <tiles-maven.version>2.19</tiles-maven.version>
-        <lasmanis-maven-tiles.version>0.0.61</lasmanis-maven-tiles.version>
+        <lasmanis-maven-tiles.version>0.0.64</lasmanis-maven-tiles.version>
 
         <!-- dependencies -->
         <assertj.version>3.18.1</assertj.version>
@@ -47,6 +47,13 @@
     </properties>
 
     <url>${baseurl}/${project.artifactId}</url>
+
+    <distributionManagement>
+        <site>
+            <id>scm-publish</id>
+            <url>${scmBase.connection}/${project.artifactId}</url>
+        </site>
+    </distributionManagement>
 
     <build>
         <pluginManagement>

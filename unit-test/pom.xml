@@ -35,6 +35,13 @@
 
     <url>${baseurl}/${project.artifactId}</url>
 
+    <distributionManagement>
+        <site>
+            <id>scm-publish</id>
+            <url>${scmBase.connection}/${project.artifactId}</url>
+        </site>
+    </distributionManagement>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
