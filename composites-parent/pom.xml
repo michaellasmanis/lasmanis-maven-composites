@@ -48,6 +48,13 @@
 
     <url>${baseurl}/${project.artifactId}</url>
 
+    <scm>
+        <connection>${scmBase.connection}/${project.artifactId}</connection>
+        <url>${scmBase.url}/${project.artifactId}</url>
+        <developerConnection>${scmBase.developerConnection}/${project.artifactId}</developerConnection>
+        <tag>${scmBase.tag}</tag>
+    </scm>
+
     <distributionManagement>
         <site>
             <id>scm-publish</id>
