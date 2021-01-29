@@ -37,7 +37,7 @@
 
         <!-- plugins/extensions -->
         <tiles-maven.version>2.19</tiles-maven.version>
-        <lasmanis-maven-tiles.version>0.0.70</lasmanis-maven-tiles.version>
+        <lasmanis-maven-tiles.version>0.0.73</lasmanis-maven-tiles.version>
 
         <!-- dependencies -->
         <assertj.version>3.18.1</assertj.version>

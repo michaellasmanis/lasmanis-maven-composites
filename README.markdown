@@ -1,5 +1,10 @@
 # Maven Composites
 
+| Branch | Status |
+| ------ | ------ |
+|Master|[![Build Status](https://img.shields.io/circleci/project/github/michaellasmanis/lasmanis-maven-composites/master.svg?style=flat)](https://circleci.com/gh/michaellasmanis/lasmanis-maven-composites/tree/master) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.lasmanis.maven.composites/composites-reactor/badge.svg?style=flat)](https://maven-badges.herokuapp.com/maven-central/com.lasmanis.maven.composites/composites-reactor)|
+
+
 This project sets up groups of maven dependencies for Java projects.
 
 ## Dependencies Provided
