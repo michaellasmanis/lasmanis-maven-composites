@@ -41,6 +41,7 @@
 
         <!-- dependencies -->
         <assertj.version>3.18.1</assertj.version>
+        <immutables.version>2.8.2</immutables.version>
         <junit.version>4.13.1</junit.version>
         <mockito.version>3.6.28</mockito.version>
 
