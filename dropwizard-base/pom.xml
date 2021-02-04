@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    Copyright © 2020 Michael Lasmanis (michael@lasmanis.com)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dropwizard-base</artifactId>
+
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>com.lasmanis.maven.composites</groupId>
+        <artifactId>composites-parent</artifactId>
+        <version>${revision}.${changelist}</version>
+        <relativePath>../composites-parent/pom.xml</relativePath>
+    </parent>
+
+    <name>Maven Composites - Dropwizard Base</name>
+    <description>Set of Maven dependencies for basic dropwizard setup</description>
+
+    <url>${baseurl}/${project.artifactId}</url>
+
+    <scm>
+        <connection>${scmBase.connection}/${project.artifactId}</connection>
+        <url>${scmBase.url}/${project.artifactId}</url>
+        <developerConnection>${scmBase.developerConnection}/${project.artifactId}</developerConnection>
+        <tag>${scmBase.tag}</tag>
+    </scm>
+
+    <distributionManagement>
+        <site>
+            <id>scm-publish</id>
+            <url>${scmBase.connection}/${project.artifactId}</url>
+        </site>
+    </distributionManagement>
+
+    <dependencies>
+      <dependency>
+          <groupId>io.dropwizard</groupId>
+          <artifactId>dropwizard-core</artifactId>
+          <version>${dropwizard.version}</version>
+          <exclusions>
+              <exclusion>
+                  <groupId>com.google.guava</groupId>
+                  <artifactId>guava</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>org.javassist</groupId>
+                  <artifactId>javassist</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>org.hibernate.validator</groupId>
+                  <artifactId>hibernate-validator</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>jakarta.annotation</groupId>
+                  <artifactId>jakarta.annotation-api</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>com.fasterxml.jackson.core</groupId>
+                  <artifactId>jackson-databind</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>joda-time</groupId>
+                  <artifactId>joda-time</artifactId>
+              </exclusion>
+          </exclusions>
+      </dependency>
+
+      <dependency>
+          <groupId>com.smoketurner</groupId>
+          <artifactId>dropwizard-swagger</artifactId>
+          <version>${dropwizard-swagger.version}</version>
+          <exclusions>
+              <exclusion>
+                  <groupId>io.dropwizard</groupId>
+                  <artifactId>dropwizard-core</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>io.dropwizard</groupId>
+                  <artifactId>dropwizard-servlets</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>com.google.guava</groupId>
+                  <artifactId>guava</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>com.github.ben-manes.caffeine</groupId>
+                  <artifactId>caffeine</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>org.slf4j</groupId>
+                  <artifactId>slf4j-api</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>org.glassfish.jersey.core</groupId>
+                  <artifactId>jersey-common</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>org.glassfish.jersey.media</groupId>
+                  <artifactId>jersey-media-multipart</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>org.glassfish.jersey.containers</groupId>
+                  <artifactId>jersey-container-servlet-core</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>com.fasterxml.jackson.core</groupId>
+                  <artifactId>jackson-annotations</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>com.fasterxml.jackson.dataformat</groupId>
+                  <artifactId>jackson-dataformat-yaml</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>com.fasterxml.jackson.core</groupId>
+                  <artifactId>jackson-databind</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>org.javassist</groupId>
+                  <artifactId>javassist</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>org.apache.commons</groupId>
+                  <artifactId>commons-lang3</artifactId>
+              </exclusion>
+          </exclusions>
+      </dependency>
+
+      <dependency>
+          <groupId>com.google.guava</groupId>
+          <artifactId>guava</artifactId>
+          <version>${guava.version}</version>
+          <exclusions>
+              <exclusion>
+                  <groupId>org.checkerframework</groupId>
+                  <artifactId>checker-qual</artifactId>
+              </exclusion>
+              <exclusion>
+                  <groupId>com.google.errorprone</groupId>
+                  <artifactId>error_prone_annotations</artifactId>
+              </exclusion>
+          </exclusions>
+      </dependency>
+
+      <dependency>
+          <groupId>io.swagger</groupId>
+          <artifactId>swagger-annotations</artifactId>
+          <version>${swagger.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.javassist</groupId>
+          <artifactId>javassist</artifactId>
+          <version>${javassist.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.glassfish.jersey.media</groupId>
+          <artifactId>jersey-media-multipart</artifactId>
+          <version>${jersey-media-multipart.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>org.hibernate.validator</groupId>
+          <artifactId>hibernate-validator</artifactId>
+          <version>${hibernate-validator.version}</version>
+          <exclusions>
+              <exclusion>
+                  <groupId>com.fasterxml</groupId>
+                  <artifactId>classmate</artifactId>
+              </exclusion>
+          </exclusions>
+      </dependency>
+
+      <dependency>
+          <groupId>jakarta.annotation</groupId>
+          <artifactId>jakarta.annotation-api</artifactId>
+          <version>${jakarta.annotation-api.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+          <version>${jackson-databind.version}</version>
+      </dependency>
+
+      <dependency>
+          <groupId>joda-time</groupId>
+          <artifactId>joda-time</artifactId>
+          <version>${joda-time.version}</version>
+      </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>io.repaint.maven</groupId>
+                <artifactId>tiles-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>
