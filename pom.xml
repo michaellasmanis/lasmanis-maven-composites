@@ -60,6 +60,7 @@
 
     <modules>
         <module>composites-parent</module>
+        <module>database</module>
         <module>dropwizard-base</module>
         <module>immutables</module>
         <module>unit-test</module>
