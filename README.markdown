@@ -9,10 +9,10 @@ This project sets up groups of maven dependencies for Java projects.
 
 ## Dependencies Provided
 
-* unit-test
-    * junit:junit
-    * org.assertj:assertj-core
-    * org.mockito:mockito-core
+* database : jdbi3 & mysql
+* dropwizard : dropwizard and dependencies
+* immutables : immutables, guava & error annotations
+* unit-test : junit, assertj, mockito
 
 ## Usage
 
