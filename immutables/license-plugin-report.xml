@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<licensePluginReport goal="CHECK" timestamp="1648350815780">
-    <module artifactId="immutables" groupId="com.lasmanis.maven.composites" version="0.0.56"/>
+<licensePluginReport goal="CHECK" timestamp="1648354099754">
+    <module artifactId="immutables" groupId="com.lasmanis.maven.composites" version="0.0.61"/>
     <files>
         <file path="pom.xml" result="PRESENT"/>
     </files>
