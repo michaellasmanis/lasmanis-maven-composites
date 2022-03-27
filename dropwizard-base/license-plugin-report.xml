@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<licensePluginReport goal="CHECK" timestamp="1648350815296">
+    <module artifactId="dropwizard-base" groupId="com.lasmanis.maven.composites" version="0.0.56"/>
+    <files>
+        <file path="pom.xml" result="PRESENT"/>
+    </files>
+</licensePluginReport>
