@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<licensePluginReport goal="CHECK" timestamp="1648354098779">
-    <module artifactId="database" groupId="com.lasmanis.maven.composites" version="0.0.61"/>
+<licensePluginReport goal="CHECK" timestamp="1648357934826">
+    <module artifactId="database" groupId="com.lasmanis.maven.composites" version="0.0.64"/>
     <files>
         <file path="pom.xml" result="PRESENT"/>
     </files>
